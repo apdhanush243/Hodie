@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hodie - Premium Hoodies</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Press+Start+2P&display=swap');
+
+        body {
+            font-family: 'Chakra Petch', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #c86640;
+            color: #f3ede6;
+        }
+
+        header {
+            background: #111010;
+            padding: 25px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            text-align: center;
+            padding: 20px;
+            background: #beb7b7;
+        }
+
+        nav a {
+            color: #f9f9f9;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: #ff0066;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background: #2d2d2d;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 280px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .buy-btn {
+            display: block;
+            padding: 12px 25px;
+            background: #ff0066;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 15px;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-btn:hover {
+            background: #ff0044;
+        }
+
+        .about, .contact {
+            text-align: center;
+            padding: 60px 20px;
+            background: #333;
+        }
+
+        .about h2, .contact h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #ff0066;
+        }
+
+        .about p, .contact p {
+            font-size: 18px;
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>Hodie - Premium Hoodies</header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#hoodies">Our Collection</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="about" id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Hodie! The ultimate destination for premium quality hoodies that bring you both comfort and style. Explore our collection and elevate your fashion game with the finest materials and perfect fit.</p>
+    </div>
+
+    <div class="container" id="hoodies">
+        <h2>Hodie Collection</h2>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://www.batchmens.com/cdn/shop/files/Essential-Hoodie-Black-Terry-Hood-Down.jpg?v=1692996601" alt="Classic Hoodie">
+                <h3>Classic Hoodie</h3>
+                <p>Our signature classic hoodie made with soft cotton for everyday comfort.</p>
+                <p>Price: ₹1,299</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71jFfbofVDL._AC_UL1500_.jpg" alt="Graphic Hoodie">
+                <h3>Graphic Hoodie</h3>
+                <p>Bold, graphic designs to make a statement. Made with high-quality materials for durability.</p>
+                <p>Price: ₹1,599</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://grimekid.weebly.com/uploads/2/5/9/2/25922004/s435874557705388918_p3_i1_w1139.jpeg" alt="Premium Hoodie">
+                <h3>Premium Hoodie</h3>
+                <p>For those who love luxury, the Premium Hoodie features a plush feel and superior craftsmanship.</p>
+                <p>Price: ₹2,499</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@hodie.com</p>
+        <p>Phone: +91 1234567890</p>
+    </div>
+
+</body>
+</html>
